@@ -4,7 +4,9 @@
   "description": "Electron version of Chromecast",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "DEBUG=tc* electron ."
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/edus44/troncast/issues"
   },
-  "homepage": "https://github.com/edus44/troncast#readme"
+  "homepage": "https://github.com/edus44/troncast#readme",
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "eslint": "^3.14.1",
+    "eslint-config-gigigo-standard": "^0.1.9"
+  },
+  "dependencies": {
+    "electron-devtools-installer": "^2.0.1",
+    "debug": "^2.6.0"
+  }
 }
