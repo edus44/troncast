@@ -20,13 +20,16 @@ function createWindow () {
         height: 800,
         show: false
     })
+    
+    //Fetch screen local path
+    let screenPath = path.join(__dirname, '/node_modules/troncast-screen')
+    let urlQueryString = '?localPath='+encodeURIComponent(screenPath)
 
-    // and load the index.html of the app.
     if (debug.enabled){
-        win.loadURL('http://localhost:13371')
+        win.loadURL('http://localhost:13371'+urlQueryString)
     }else{
         win.loadURL(url.format({
-            pathname: path.join(__dirname, '/node_modules/troncast-screen/dist/index.html'),
+            pathname: path.join(screenPath, '/dist/index.html'+urlQueryString),
             protocol: 'file:',
             slashes: true
         }))
