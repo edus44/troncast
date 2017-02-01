@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "dev": "DEBUG=tc* electron ."
+    "dev": "cross-env DEBUG=tc* electron ."
   },
   "repository": {
     "type": "git",
@@ -28,10 +28,11 @@
   "devDependencies": {
     "electron": "^1.4.15",
     "eslint": "^3.14.1",
-    "eslint-config-gigigo-standard": "^0.1.9"
+    "eslint-config-gigigo-standard": "^0.1.9",
+    "cross-env": "^3.1.4"
   },
   "dependencies": {
-    "electron-devtools-installer": "^2.0.1",
-    "debug": "^2.6.0"
+    "debug": "^2.6.0",
+    "electron-devtools-installer": "^2.0.1"
   }
 }
