@@ -1,6 +1,6 @@
 {
   "name": "troncast",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "Electron version of Chromecast",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "debug": "^2.6.0",
     "electron-devtools-installer": "^2.0.1",
     "troncast-remote": "0.0.1-alpha.2",
-    "troncast-screen": "0.0.1-alpha.2",
+    "troncast-screen": "0.0.1-alpha.3",
     "troncast-server": "0.0.1-alpha.2"
   }
 }
