@@ -26,13 +26,13 @@ function createWindow () {
     let urlQueryString = '?localPath='+encodeURIComponent(screenPath)
 
     if (debug.enabled){
-        win.loadURL('http://localhost:13371'+urlQueryString)
+        win.loadURL(`http://localhost:13371${urlQueryString}`)
     }else{
-        win.loadURL(url.format({
-            pathname: path.join(screenPath, '/dist/index.html'+urlQueryString),
-            protocol: 'file:',
-            slashes: true
-        }))
+        win.loadURL(`file://${screenPath}/dist/index.html${urlQueryString}`.replace(/\\/g,'/'))
+    }
+
+    if (!debug.enabled){
+        require('troncast-server')
     }
 
 
