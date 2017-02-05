@@ -21,9 +21,11 @@ function createWindow () {
         show: false
     })
     
-    //Fetch screen local path
+    //Fetch screen local path and remote uri
     let screenPath = path.join(__dirname, '/node_modules/troncast-screen')
-    let urlQueryString = '?localPath='+encodeURIComponent(screenPath)
+    let localIp = require('ip').address()
+    let remoteUri = `http://${localIp}:13370`
+    let urlQueryString = '?localPath='+encodeURIComponent(screenPath)+'&remoteUri='+encodeURIComponent(remoteUri)
 
     if (debug.enabled){
         win.loadURL(`http://localhost:13371${urlQueryString}`)
