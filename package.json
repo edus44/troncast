@@ -35,8 +35,8 @@
     "debug": "^2.6.0",
     "electron-devtools-installer": "^2.0.1",
     "ip": "^1.1.4",
-    "troncast-remote": "0.0.1-alpha.5",
-    "troncast-screen": "0.0.1-alpha.5",
-    "troncast-server": "0.0.1-alpha.6"
+    "troncast-remote": "0.0.1-alpha.6",
+    "troncast-screen": "0.0.1-alpha.7",
+    "troncast-server": "0.0.1-alpha.7"
   }
 }
